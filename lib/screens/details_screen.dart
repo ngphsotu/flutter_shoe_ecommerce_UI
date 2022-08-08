@@ -77,7 +77,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
         ),
         leading: IconButton(
           onPressed: () => Navigator.of(context).pop(),
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
         ),
         actions: [Image.asset('assets/ic_search.png')],
       ),
@@ -98,6 +101,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         child: Image.asset('assets/ring.png'),
                       ),
                     ),
+                    // Rotation image 360
                     ImageView360(
                       key: UniqueKey(),
                       imageList: imageList,
@@ -130,7 +134,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Text
+                      // Text - Name Products
                       RichText(
                         textAlign: TextAlign.start,
                         text: const TextSpan(
@@ -146,7 +150,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       Row(
                         children: [
                           const Icon(Icons.star, color: Colors.amber),
-                          // Text
+                          // Text - Vote
                           RichText(
                             textAlign: TextAlign.start,
                             text: const TextSpan(
@@ -158,7 +162,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                             ),
                           ),
                           const SizedBox(width: 5),
-                          // Text
+                          // Text - nuber reviews
                           RichText(
                             textAlign: TextAlign.start,
                             text: const TextSpan(
@@ -172,7 +176,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ],
                       ),
                       const SizedBox(height: 10),
-                      // Text
+                      // Text - description products
                       RichText(
                         textAlign: TextAlign.start,
                         text: const TextSpan(
@@ -185,7 +189,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      // Text
+                      // Text - Select color
                       RichText(
                         textAlign: TextAlign.start,
                         text: const TextSpan(
@@ -196,6 +200,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ),
                         ),
                       ),
+                      // buildColorWidgets
                       SizedBox(
                         height: 80,
                         child: ListView(

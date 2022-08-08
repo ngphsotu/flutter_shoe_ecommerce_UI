@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      // Text - Nike air max
+                      // Text Prodcuts
                       RichText(
                         text: const TextSpan(
                           text: 'Nike Air\nMax 90',
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       const SizedBox(height: 5),
-                      // Text -
+                      // Button Text
                       ElevatedButton(
                         onPressed: () {},
                         style: ButtonStyle(
@@ -161,6 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           const SizedBox(height: 10),
+          // Product description
           GridView.count(
             padding: const EdgeInsets.all(5),
             physics: const ClampingScrollPhysics(),
