@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:shoecommerce/screens/details_screen.dart';
 
 import '/data.dart';
 import '/my_colors.dart';
+import '/screens/details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

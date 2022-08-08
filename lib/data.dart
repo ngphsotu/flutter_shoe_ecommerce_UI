@@ -1,4 +1,4 @@
-import 'package:shoecommerce/product_model.dart';
+import 'product_model.dart';
 
 class Data {
   static List<ProductModel> generateProducts() {

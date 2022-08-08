@@ -15,8 +15,8 @@ class DetailsScreen extends StatefulWidget {
 
 class _DetailsScreenState extends State<DetailsScreen> {
   //
-  int rotationCount = 22;
-  int swipeSensitivity = 2;
+  int rotationCount = 22; // 22 images
+  int swipeSensitivity = 2; // range 1 -5
   bool autoRotate = false;
   bool imagePrecached = true;
   bool allowSwipeToRotate = true;
